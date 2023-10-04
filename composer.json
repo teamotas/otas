@@ -1,0 +1,11 @@
+{
+    "name": "hp/otas",
+    "autoload": {
+        "psr-4": {
+            "Hp\\Otas\\": "src/"
+        }
+    },
+    "require": {
+        "cboden/ratchet": "^0.4.4"
+    }
+}
