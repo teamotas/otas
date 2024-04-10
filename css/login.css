@@ -1,0 +1,77 @@
+@import url('all-common.css');
+/* login */
+.loginform {
+  width: 50rem;
+  padding: 3rem 2rem;
+  background: var(--sidebar-color);
+  transition: 2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  text-align: center;
+  text-transform: none;
+  color: var(--primary-color);
+  padding-bottom: 0.5rem;
+  font-size: 2.45rem;
+}
+.label {
+  text-transform: uppercase;
+  text-decoration: wavy;
+  color: rgb(93, 127, 214);
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+.input{
+  width: 100%;
+  height: 3rem;
+  padding: 0 1rem;
+}
+.error-message {
+  color: red;
+  font-size: 1.35rem;
+  margin:0.5rem 0 0 0.5rem;
+  display: none; 
+}
+.error-input{
+  margin-bottom: 1.5rem;
+}
+.success input {
+  border-color: #09c372;
+}
+.error {
+  color: #ff3860;
+  font-size: 1.3rem;
+}
+.loginbtn {
+  width: 40%;
+  height: 2.8rem;
+  background: var(--primary-color);
+  color: aliceblue;
+  margin:1.5rem 0.5rem 0 0.4rem;
+  font-size: 1.6rem;
+  margin-left: 12.5rem;
+}
+.loginbtn:hover{
+  background:var(--primary-color-light);
+}
+.links>a{
+  margin-left: 17rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+a:hover{
+  text-decoration: underline;
+}
+.showpswd{
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+}
