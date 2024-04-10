@@ -1,7 +1,7 @@
 <?php
 include "connection.php";
 include "js/format.php";
-// include 'sidebar.php';
+include 'sidebar.php';
 error_reporting(0);
 session_start();
 if (isset($_POST['search'])) {
@@ -96,7 +96,7 @@ if (isset($_POST['search'])) {
         </table>
         
         <?php 
-            if ($projectsWithCBTDate) {
+            if (!empty($projectsWithCBTDate)) {
                 echo "
                 <div class='card1'>
                     <table border='4'>

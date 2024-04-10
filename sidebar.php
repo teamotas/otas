@@ -224,22 +224,16 @@
                 </li>
             </ul>
 
-            <li class="nav-link">
-                    <a href="#">
-                        <i class='bx bx-task icon' ></i>
-                        <span class="text nav-text">QPR Generator</span>
-                        <i class='bx bxs-chevron-down dropdown-icon'></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                    <?php //if($userType===''){?>
-                        <li><a href="report-generate.php">Generate Quarterly Report</a></li>
-                        <? //}?>
-                        <!-- <li><a href="#">PROJECTS IN PROGRESS Report Generate</a></li>
-                        <li><a href="#">Fully Completed Report Generate</a></li>
-                        <li><a href="#">Physically Completed Financially not Completed Report Generate</a></li> -->
-                        
-                    </ul>
-                </li>
+            <!-- <li class="nav-link">
+                <a href="#">
+                    <i class='bx bx-task icon' ></i>
+                    <span class="text nav-text">QPR Generator</span>
+                    <i class='bx bxs-chevron-down dropdown-icon'></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="report-generate.php">Generate Quarterly Report</a></li>                    
+                </ul>
+            </li> -->
 
             <div class="bottom-content" >
                 <li class="">
