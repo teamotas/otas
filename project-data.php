@@ -55,20 +55,20 @@
         <link rel="stylesheet" href="css/table.css">
         <link rel="stylesheet" href="css/popup.css">
         <script>
-        function showPopup() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'block';
-        }
+            function showPopup() {
+                var popup = document.getElementById('popup');
+                popup.style.display = 'block';
+            }
 
-        function download(Id) {
-            location.replace('generate-excel-data.php?Id=' +Id);
-        }
+            function download(Id) {
+                location.replace('generate-excel-data.php?Id=' +Id);
+            }
 
-        function closePopup() {
-            var popup = document.getElementById('popup');
-            popup.style.display = 'none';
-            location.replace('project-data.php');
-        }
+            function closePopup() {
+                var popup = document.getElementById('popup');
+                popup.style.display = 'none';
+                location.replace('project-data.php');
+            }
         </script>
     </head>
     <body>
@@ -282,9 +282,11 @@
             else {?>
                 <div class="no_data">
                     <div><h3> No Project Available </h3></div>&nbsp;&nbsp;
-                    <div>
-                        <p>Want to create project <a href='choose-client.php'>Click here</a></p>
-                    </div>
+                    <?php if($userType==='User'){?> 
+                        <div>
+                            <p>Want to create project <a href='choose-client.php'>Click here</a></p>
+                        </div>
+                        <?php }?>
                 </div>
             <?php }?>
             </div>

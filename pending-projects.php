@@ -56,9 +56,9 @@
         <link rel="stylesheet" href="css/popup.css">
     </head>
     <body>
-        <section class="home">
+    <section class="home">
             <div class="card1">
-            <?php if ($total != 0) {?>
+                <?php if ($total != 0) {?>
                     <table border="4">
                         <thead > 
                             <tr>
@@ -251,6 +251,7 @@
                 else {?>
                     <div class="no_data">
                         <div><h3> No Amount Pending Project Available </h3></div>
+                        &nbsp;&nbsp;
                     </div>
                 <?php }?>
             </div>

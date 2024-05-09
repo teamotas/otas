@@ -57,11 +57,9 @@
                 location.replace('project-data-tcs.php');
             }
         </script>
-
     </head>
     <body >
-    <section class="home" >
-            <div class="text" >
+        <section class="home" >
                 <div id="popup" style="display: none;">
                     <div class="popup-content">
                         <p>Your file is ready for download!</p><br>
@@ -70,12 +68,12 @@
                         <button onclick="closePopup()">Close</button>
                     </div>
                 </div>
+                <div class="card1" >
                 <?php
                 if ($total != 0) {
                     ?>
               
                     <table border="4">
-                  
                     <thead style="background:scroll ;"> 
                         <tr>
                             <td colspan="100%"  class="thtr">TCS Project Data</td>
@@ -207,9 +205,11 @@
                 else{?>
                     <div class="no_data">
                         <div><h3> No Project Available </h3></div>&nbsp;&nbsp;
+                        <?php if($userType==='User'){?> 
                         <div>
                             <p>Want to create project <a href='choose-client-tcs.php'>Click here</a></p>
                         </div>
+                        <?php }?>
                     </div>
                 <?php }?>
             </div>
